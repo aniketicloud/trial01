@@ -1,25 +1,27 @@
 <template>
-<div>
-  <div class="content-desktop">
-    <div class="flex-container">
-      <single-sheet class="single-item"></single-sheet>
-      <single-sheet class="single-item"></single-sheet>
-      <single-sheet class="single-item"></single-sheet>
+  <div>
+    <div class="content-desktop">
+      <div class="flex-container">
+        <single-sheet class="single-item"></single-sheet>
+        <single-sheet class="single-item"></single-sheet>
+        <single-sheet class="single-item"></single-sheet>
+      </div>
+
+      <div class="flex-container">
+        <single-down-sheet class="single-item"></single-down-sheet>
+        <single-down-sheet class="single-item"></single-down-sheet>
+        <single-down-sheet class="single-item"></single-down-sheet>
+      </div>
     </div>
 
-    <div class="flex-container">
-      <single-down-sheet class="single-item"></single-down-sheet>
-      <single-down-sheet class="single-item"></single-down-sheet>
-      <single-down-sheet class="single-item"></single-down-sheet>
+    <div class="content-mobile">
+      <div class="flex-container">
+        <single-down-sheet class="single-item"></single-down-sheet>
+        <single-down-sheet class="single-item"></single-down-sheet>
+        <single-down-sheet class="single-item"></single-down-sheet>
+      </div>
     </div>
   </div>
-
-  <div class="content-mobile">
-    <div class="flex-container">
-      <h1>Helo</h1>
-    </div>
-  </div>
-</div>  
 </template>
 
 <script>
@@ -29,7 +31,7 @@ import SingleDownSheet from "./SingleDownSheet";
 export default {
   components: {
     SingleSheet,
-    SingleDownSheet
+    SingleDownSheet,
   },
 };
 </script>
@@ -51,7 +53,7 @@ export default {
   .content-mobile {
     display: none;
   }
-  .content-desktop{
+  .content-desktop {
     display: block;
   }
 }
@@ -61,7 +63,7 @@ export default {
   .content-mobile {
     display: none;
   }
-  .content-desktop{
+  .content-desktop {
     display: block;
   }
 }
@@ -71,7 +73,7 @@ export default {
   .content-mobile {
     display: none;
   }
-  .content-desktop{
+  .content-desktop {
     display: block;
   }
 }
@@ -84,17 +86,20 @@ export default {
   .content-mobile {
     display: none;
   }
-  .content-desktop{
+  .content-desktop {
     display: block;
   }
 }
 
 /* Small phone: from 0 to 480px */
 @media only screen and (max-width: 480px) {
+  .single-item {
+    width: 92%;
+  }
   .content-desktop {
     display: none;
   }
-  .content-mobile{
+  .content-mobile {
     display: block;
   }
 }

@@ -1,14 +1,14 @@
 <template>
-  <trial/>
+  <skeleton-page/>
 </template>
 
 <script>
 
-import Trial from "./components/skeleton-components/Trial";
+import SkeletonPage from "./components/skeleton-components/SkeletonPage";
 
 export default {
   components: {
-    Trial
+    SkeletonPage
   },
 };
 </script>

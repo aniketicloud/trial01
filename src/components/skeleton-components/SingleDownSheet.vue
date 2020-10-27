@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <heading style="marginBottom:34px"/>
+    <heading/>
     <two-rows></two-rows>
     <spacer />
     <two-rows></two-rows>

@@ -1,16 +1,17 @@
 <template>
   <div>
+    <header-skeleton></header-skeleton>
     <div class="content-desktop">
       <div class="flex-container">
         <single-sheet class="single-item"></single-sheet>
         <single-sheet class="single-item"></single-sheet>
-        <single-sheet class="single-item"></single-sheet>
+        <single-sheet class="single-item desktop-only"></single-sheet>
       </div>
 
       <div class="flex-container">
         <single-down-sheet class="single-item"></single-down-sheet>
         <single-down-sheet class="single-item"></single-down-sheet>
-        <single-down-sheet class="single-item"></single-down-sheet>
+        <single-down-sheet class="single-item desktop-only"></single-down-sheet>
       </div>
     </div>
 
@@ -25,6 +26,7 @@
 </template>
 
 <script>
+import HeaderSkeleton from '../navigation-bar-skeleton/HeaderSkeleton'
 import SingleSheet from "./SingleSheet";
 import SingleDownSheet from "./SingleDownSheet";
 
@@ -32,6 +34,7 @@ export default {
   components: {
     SingleSheet,
     SingleDownSheet,
+    HeaderSkeleton
   },
 };
 </script>
@@ -82,6 +85,10 @@ export default {
 @media only screen and (max-width: 767px) {
   .single-item {
     width: 32%;
+  }
+
+  .desktop-only {
+    display: none;
   }
   .content-mobile {
     display: none;

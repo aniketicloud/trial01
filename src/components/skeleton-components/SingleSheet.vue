@@ -1,14 +1,14 @@
 <template>
   <div class="container">
     <div class="upper-skeleton">
-    <heading style="marginBottom:34px"/>
-    <two-rows></two-rows>
-    <spacer />
-    <two-rows></two-rows>
-    <spacer />
-    <two-rows></two-rows>
-    <spacer />
-    <two-rows></two-rows>
+      <heading style="marginbottom: 34px" />
+      <two-rows></two-rows>
+      <spacer />
+      <two-rows></two-rows>
+      <spacer />
+      <two-rows></two-rows>
+      <spacer />
+      <two-rows></two-rows>
     </div>
   </div>
 </template>
@@ -28,9 +28,9 @@ export default {
 </script>
 
 <style scoped>
-
 .container {
   padding: 32px;
   background-color: yellow;
+  height: 566px;
 }
 </style>>

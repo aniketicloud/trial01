@@ -10,6 +10,7 @@
   border: 1px solid yellowgreen;
   border-radius: 5px;
   background-color: blueviolet;
+  margin-bottom: 34px;
 }
 
 </style>

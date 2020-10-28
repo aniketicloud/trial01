@@ -1,16 +1,13 @@
 <template>
-<div class="rectangle">
-</div>
+  <div class="rectangle"></div>
 </template>
 
-<style>
-.rectangle{
+<style scoped>
+.rectangle {
   height: 42px;
   width: 40%;
-  border: 1px solid yellowgreen;
   border-radius: 5px;
-  background-color: blueviolet;
+  background-color: #e6e6e6;
   margin-bottom: 34px;
 }
-
 </style>

@@ -1,10 +1,10 @@
 <template>
-  <div>
-    <header-skeleton></header-skeleton>
+  <div class="skeleton-page">
     <div class="content-desktop">
       <div class="flex-container">
         <single-sheet class="single-item"></single-sheet>
-        <single-sheet class="single-item"></single-sheet>
+        <!-- <single-sheet class="single-item"></single-sheet> -->
+        <error-component class="single-item"></error-component>
         <single-sheet class="single-item desktop-only"></single-sheet>
       </div>
 
@@ -17,31 +17,39 @@
 
     <div class="content-mobile">
       <div class="flex-container">
-        <single-down-sheet class="single-item"></single-down-sheet>
-        <single-down-sheet class="single-item"></single-down-sheet>
-        <single-down-sheet class="single-item"></single-down-sheet>
+        <error-component class="single-item" style="marginBottom:22px"></error-component>
+        <single-down-sheet class="single-item" style="marginBottom:22px"></single-down-sheet>
+        <single-down-sheet class="single-item" style="marginBottom:22px"></single-down-sheet>
+        <single-down-sheet class="single-item" style="marginBottom:22px"></single-down-sheet>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import HeaderSkeleton from '../navigation-bar-skeleton/HeaderSkeleton'
 import SingleSheet from "./SingleSheet";
 import SingleDownSheet from "./SingleDownSheet";
+import ErrorComponent from '../error-component/ErrorComponent'
+// import Spacer from './Spacer'
 
 export default {
-  components: {
+    components: {
     SingleSheet,
     SingleDownSheet,
-    HeaderSkeleton
+    ErrorComponent,
+    // Spacer
   },
 };
 </script>
 
 <style scoped>
-.flex-container {
+
+.skeleton-page{
   padding: 32px;
+}
+
+.flex-container {
+  padding-bottom: 32px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

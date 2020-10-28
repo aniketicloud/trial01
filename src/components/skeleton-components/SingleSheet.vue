@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="upper-skeleton">
-      <heading style="marginbottom: 34px" />
+      <heading />
       <two-rows></two-rows>
       <spacer />
       <two-rows></two-rows>
@@ -30,7 +30,7 @@ export default {
 <style scoped>
 .container {
   padding: 32px;
-  background-color: yellow;
+  background-color: #ffffff;
   height: 566px;
 }
 </style>>

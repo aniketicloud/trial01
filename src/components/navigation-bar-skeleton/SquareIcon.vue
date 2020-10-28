@@ -6,8 +6,8 @@
 .square-icon {
   height: 24px;
   width: 24px;
-  border: 1px solid yellowgreen;
+  border: 2px;
   border-radius: 5px;
-  background-color: rgb(187, 59, 59);
+  background-color: #d8dbde;
 }
 </style>
